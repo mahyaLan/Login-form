@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SabLearn | Js | 101</title>
+    <link rel="stylesheet" href="exercise.css">
+</head>
+
+<!-- <script>alert(10)</script> -->
+<body>
+
+    <div class="register-form">
+        <div class="registration">
+
+            <form id="LoginForm" class="form">
+                <!-- <input type="text" placeholder="UserName" id="userName" class="case input-form" onkeypress="keyLog"> -->
+                <!-- <input type="text" placeholder="UserName" id="userName" class="case input-form" onkeydown="keyLog()" > -->
+                <input type="text" placeholder="UserName" id="username" class="username case input-form" 
+                onblur="userNameValidation()" >
+                <span class="username-validation"></span>
+
+                <input type="password" placeholder="Password" id="password" class="password case input-form" 
+                onblur="passValidation()" >
+                <span class="password-validation"></span> 
+
+                <button type="button" onclick="dataValidation()" class="case" >Login</button>
+            </form>
+
+            <p>Not registered?
+            <a> Creat an account</a>
+
+            
+            </p>
+        </div>
+        
+    </div>
+    <div id="modal">You can't Enter !!!</div>
+
+    <script src="exercise.js"></script>
+</body>
+</html>
